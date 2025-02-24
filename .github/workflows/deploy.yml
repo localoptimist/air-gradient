@@ -24,15 +24,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Create environment variables
-        run: echo "REACT_APP_AIRGRADIENT_API_TOKEN=f09c595e-ca32-4321-be12-a66124f5d2c6" >> .env
-
       - name: Build the project
         run: npm run build
 
-     - name: Deploy to GitHub Pages
-       uses: peaceiris/actions-gh-pages@v4
-       with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-         publish_dir: ./build
-         publish_branch: gh-pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
