@@ -1,9 +1,12 @@
+// src/components/Dashboard.js - Updated with Hardcoded API Token and Sensor ID
+
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 const API_URL = 'https://api.airgradient.com/public/v1/sensors/d83bda205dcc/measurements';
+const API_TOKEN = 'f09c595e-ca32-4321-be12-a66124f5d2c6';
 
 const AQI_COLORS = {
   good: '#00E400',
@@ -15,7 +18,11 @@ const AQI_COLORS = {
 };
 
 const fetchData = async (period) => {
-  const response = await fetch(`${API_URL}?period=${period}`);
+  const response = await fetch(`${API_URL}?period=${period}`, {
+    headers: {
+      Authorization: `Bearer ${API_TOKEN}`
+    }
+  });
   const data = await response.json();
   return data.measurements.map(item => ({
     time: new Date(item.timestamp).toLocaleTimeString(),
@@ -69,3 +76,4 @@ export default function Dashboard() {
   );
 }
 
+// ✅ Updated: Dashboard.js now includes hardcoded API token and sensor ID.
