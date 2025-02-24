@@ -3,7 +3,7 @@
   "name": "airgradient-dashboard",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://YOUR-USERNAME.github.io/YOUR-REPO-NAME",
+  "homepage": "https://localoptimist.github.io/air-gradient",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
