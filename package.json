@@ -1,0 +1,23 @@
+// package.json
+{
+  "name": "airgradient-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://YOUR-USERNAME.github.io/YOUR-REPO-NAME",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "recharts": "^2.1.0",
+    "shadcn/ui": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
