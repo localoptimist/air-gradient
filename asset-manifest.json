@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/air-gradient/static/css/main.dca40fa0.css",
+    "main.js": "/air-gradient/static/js/main.3f02745a.js",
+    "index.html": "/air-gradient/index.html",
+    "main.dca40fa0.css.map": "/air-gradient/static/css/main.dca40fa0.css.map",
+    "main.3f02745a.js.map": "/air-gradient/static/js/main.3f02745a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dca40fa0.css",
+    "static/js/main.3f02745a.js"
+  ]
+}
