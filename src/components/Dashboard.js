@@ -1,9 +1,7 @@
-// src/components/Dashboard.js - Updated with Hardcoded API Token and Sensor ID
-
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@mui/material';
+import Button from '@mui/material/Button';
 
 const API_URL = 'https://api.airgradient.com/public/v1/sensors/d83bda205dcc/measurements';
 const API_TOKEN = 'f09c595e-ca32-4321-be12-a66124f5d2c6';
@@ -53,7 +51,7 @@ export default function Dashboard() {
     <div className="p-4 grid gap-4">
       <div className="flex gap-2 justify-center mb-4">
         {['24h', '7d', '1m', '3m'].map((p) => (
-          <Button key={p} onClick={() => setPeriod(p)} variant={period === p ? 'default' : 'outline'}>
+          <Button key={p} onClick={() => setPeriod(p)} variant={period === p ? 'contained' : 'outlined'}>
             {p.toUpperCase()}
           </Button>
         ))}
@@ -75,5 +73,3 @@ export default function Dashboard() {
     </div>
   );
 }
-
-// ✅ Updated: Dashboard.js now includes hardcoded API token and sensor ID.
