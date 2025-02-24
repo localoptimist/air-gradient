@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Deploy AirGradient Dashboard to GitHub Pages
 
 on:
@@ -25,6 +23,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Create environment variables
+        run: echo "REACT_APP_AIRGRADIENT_API_TOKEN=f09c595e-ca32-4321-be12-a66124f5d2c6" >> .env
 
       - name: Build the project
         run: npm run build
