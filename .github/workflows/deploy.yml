@@ -1,6 +1,7 @@
 name: Deploy AirGradient Dashboard to GitHub Pages
 
 on:
+  workflow_dispatch:  # Manual trigger option
   push:
     branches:
       - main
