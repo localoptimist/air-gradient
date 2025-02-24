@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } f
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
-const API_URL = 'https://api.airgradient.com/public/v1/sensors/YOUR_SENSOR_ID/measurements';
+const API_URL = 'https://api.airgradient.com/public/v1/sensors/d83bda205dcc/measurements';
 
 const AQI_COLORS = {
   good: '#00E400',
