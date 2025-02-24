@@ -8,6 +8,8 @@
     "react-dom": "^18.0.0",
     "recharts": "^2.1.0",
     "@mui/material": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
     "lucide-react": "latest"
   },
   "devDependencies": {
@@ -19,6 +21,5 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "optionalDependencies": {}
+  }
 }
